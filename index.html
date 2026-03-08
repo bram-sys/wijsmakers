@@ -3,8 +3,9 @@
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Wijsmakers — Theater &amp; Muziek op Maat</title>
-  <meta name="description" content="Wijsmakers maakt voorstellingen op maat vol theater en muziek. Voor bruiloften, feesten en jubilea die onvergetelijk moeten zijn."/>
+  <title>Wijsmakers — Theatrale Voorstellingen op Maat voor Bruiloften &amp; Feesten</title>
+  <meta name="description" content="Wijsmakers maakt theatrale voorstellingen op maat voor bruiloften, feesten en jubilea in heel Nederland. Persoonlijk, muzikaal en onvergetelijk. Boek Bram, Mila en Ruben."/>
+  <meta name="keywords" content="theater op maat, bruiloft entertainment, trouwceremonie theater, feest voorstelling, jubileum show, theatrale bruiloft Nederland"/>
   <link rel="canonical" href="https://wijsmakers.nl/"/>
   <link rel="icon" type="image/svg+xml" href="favicon.svg"/>
 
@@ -12,8 +13,15 @@
   <meta property="og:type" content="website"/>
   <meta property="og:url" content="https://wijsmakers.nl/"/>
   <meta property="og:title" content="Wijsmakers — Theater &amp; Muziek op Maat"/>
-  <meta property="og:description" content="Wijsmakers maakt voorstellingen op maat vol theater en muziek. Voor bruiloften, feesten en jubilea die onvergetelijk moeten zijn."/>
+  <meta property="og:description" content="Theatrale voorstellingen op maat voor bruiloften, feesten en jubilea. Persoonlijk, muzikaal en onvergetelijk."/>
   <meta property="og:image" content="https://wijsmakers.nl/img/wijsmakers-1.jpg"/>
+  <meta property="og:locale" content="nl_NL"/>
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:title" content="Wijsmakers — Theater &amp; Muziek op Maat"/>
+  <meta name="twitter:description" content="Theatrale voorstellingen op maat voor bruiloften, feesten en jubilea."/>
+  <meta name="twitter:image" content="https://wijsmakers.nl/img/wijsmakers-1.jpg"/>
 
   <!-- JSON-LD -->
   <script type="application/ld+json">
@@ -22,32 +30,46 @@
     "@type": "PerformingGroup",
     "name": "Wijsmakers",
     "url": "https://wijsmakers.nl",
-    "description": "Theatergroep die voorstellingen op maat maakt vol theater en muziek voor bruiloften, feesten en jubilea.",
-    "address": { "@type": "PostalAddress", "addressCountry": "NL" },
+    "description": "Wijsmakers maakt theatrale voorstellingen op maat voor bruiloften, feesten en jubilea in heel Nederland. Drie makers combineren theater, muziek en humor tot een onvergetelijke ervaring.",
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "NL"
+    },
     "sameAs": [
       "https://instagram.com/wijsmakers"
-    ]
+    ],
+    "member": [
+      { "@type": "Person", "name": "Ruben Wolbers" },
+      { "@type": "Person", "name": "Mila Werner" },
+      { "@type": "Person", "name": "Bram Wikkerink" }
+    ],
+    "knowsAbout": ["Theater", "Muziek", "Bruiloften", "Evenementen"],
+    "areaServed": {
+      "@type": "Country",
+      "name": "Nederland"
+    }
   }
   </script>
 
   <link rel="preconnect" href="https://fonts.googleapis.com"/>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Sacramento&family=Josefin+Sans:wght@300;400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet"/>
 
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
     :root {
-      --cream:     #FAF7F5;
-      --warm:      #F0ECF4;
-      --charcoal:  #2A2640;
-      --text:      #3D3956;
-      --muted:     #7E7A8F;
+      --cream:     #FAFAFE;
+      --warm:      #F2EFF8;
+      --lavender:  #B8A9D9;
+      --lavender-l:#D1C6E8;
+      --navy:      #2D2755;
+      --text:      #3A3560;
+      --text-body: #4D4872;
+      --muted:     #7A7598;
       --accent:    #6E5FAD;
-      --accent-l:  #8474C0;
-      --gold:      #6E5FAD;
-      --sage:      #9B8DC8;
-      --font-d:    'Playfair Display', Georgia, serif;
+      --font-logo: 'Sacramento', cursive;
+      --font-h:    'Josefin Sans', sans-serif;
       --font-s:    'Inter', -apple-system, sans-serif;
     }
 
@@ -55,7 +77,7 @@
     body {
       font-family: var(--font-s);
       background: var(--cream);
-      color: var(--text);
+      color: var(--text-body);
       line-height: 1.6;
       -webkit-font-smoothing: antialiased;
     }
@@ -73,35 +95,35 @@
       transition: background 0.4s, padding 0.4s, box-shadow 0.4s;
     }
     nav.scrolled {
-      background: rgba(250,247,242,0.92);
+      background: rgba(250,250,254,0.92);
       backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px);
       padding: 14px 40px;
-      box-shadow: 0 1px 0 rgba(0,0,0,0.06);
+      box-shadow: 0 1px 0 rgba(45,39,85,0.08);
     }
     .nav-logo {
-      font-family: var(--font-d); font-size: 22px; font-weight: 600;
-      color: var(--cream); text-decoration: none;
-      letter-spacing: -0.02em;
+      font-family: var(--font-logo); font-size: 32px; font-weight: 400;
+      color: #fff; text-decoration: none;
       transition: color 0.4s;
     }
-    nav.scrolled .nav-logo { color: var(--charcoal); }
+    nav.scrolled .nav-logo { color: var(--navy); }
     .nav-links { display: flex; gap: 32px; list-style: none; }
     .nav-links a {
-      font-size: 13px; font-weight: 400; letter-spacing: 0.06em;
+      font-family: var(--font-h);
+      font-size: 12px; font-weight: 400; letter-spacing: 0.14em;
       text-transform: uppercase; text-decoration: none;
-      color: rgba(250,247,242,0.7);
+      color: rgba(255,255,255,0.7);
       transition: color 0.3s;
     }
-    .nav-links a:hover { color: var(--cream); }
+    .nav-links a:hover { color: #fff; }
     nav.scrolled .nav-links a { color: var(--muted); }
-    nav.scrolled .nav-links a:hover { color: var(--charcoal); }
+    nav.scrolled .nav-links a:hover { color: var(--navy); }
 
     .nav-toggle { display: none; background: none; border: none; cursor: pointer; padding: 4px; }
     .nav-toggle span {
       display: block; width: 24px; height: 2px; margin: 5px 0;
-      background: var(--cream); transition: background 0.3s, transform 0.3s, opacity 0.3s;
+      background: #fff; transition: background 0.3s, transform 0.3s, opacity 0.3s;
     }
-    nav.scrolled .nav-toggle span { background: var(--charcoal); }
+    nav.scrolled .nav-toggle span { background: var(--navy); }
 
     /* ── HERO ── */
     .hero {
@@ -116,9 +138,9 @@
       position: absolute; inset: 0;
       background: linear-gradient(
         to bottom,
-        rgba(42,38,64,0.30) 0%,
-        rgba(42,38,64,0.55) 50%,
-        rgba(42,38,64,0.85) 100%
+        rgba(45,39,85,0.30) 0%,
+        rgba(45,39,85,0.50) 50%,
+        rgba(45,39,85,0.85) 100%
       );
     }
     .hero-content {
@@ -126,32 +148,36 @@
       padding: 0 24px; max-width: 720px;
     }
     .hero-content h1 {
-      font-family: var(--font-d); font-weight: 400;
-      font-size: clamp(48px, 8vw, 96px);
-      color: var(--cream); line-height: 1;
-      letter-spacing: -0.03em; margin-bottom: 20px;
+      font-family: var(--font-logo); font-weight: 400;
+      font-size: clamp(56px, 10vw, 120px);
+      color: #fff; line-height: 0.9;
+      margin-bottom: 8px;
     }
-    .hero-content h1 em {
-      display: block; font-style: italic; color: var(--gold);
-      font-size: 0.55em; margin-top: 8px;
+    .hero-tagline {
+      font-family: var(--font-h); font-weight: 300;
+      font-size: clamp(14px, 1.8vw, 18px);
+      letter-spacing: 0.18em; text-transform: uppercase;
+      color: var(--lavender-l);
+      margin-bottom: 28px;
     }
     .hero-content p {
       font-family: var(--font-s); font-size: 16px; font-weight: 300;
-      color: rgba(250,247,242,0.75); max-width: 480px; margin: 0 auto 36px;
+      color: rgba(255,255,255,0.8); max-width: 480px; margin: 0 auto 36px;
       line-height: 1.7;
     }
     .hero-cta {
       display: inline-block; padding: 14px 40px;
-      font-family: var(--font-s); font-size: 13px; font-weight: 500;
-      letter-spacing: 0.12em; text-transform: uppercase;
-      color: var(--cream); text-decoration: none;
-      border: 1px solid rgba(250,247,242,0.4);
+      font-family: var(--font-h); font-size: 12px; font-weight: 500;
+      letter-spacing: 0.14em; text-transform: uppercase;
+      color: #fff; text-decoration: none;
+      border: 1.5px solid rgba(255,255,255,0.4);
       border-radius: 2px;
       transition: background 0.3s, border-color 0.3s;
     }
     .hero-cta:hover {
-      background: var(--accent);
-      border-color: var(--accent);
+      background: var(--lavender);
+      border-color: var(--lavender);
+      color: var(--navy);
     }
     .hero-scroll {
       position: absolute; bottom: 32px; left: 50%; transform: translateX(-50%);
@@ -159,7 +185,7 @@
     }
     .hero-scroll span {
       display: block; width: 1px; height: 48px;
-      background: linear-gradient(to bottom, transparent, rgba(250,247,242,0.5));
+      background: linear-gradient(to bottom, transparent, rgba(255,255,255,0.5));
       animation: scrollPulse 2s ease-in-out infinite;
     }
     @keyframes scrollPulse {
@@ -172,15 +198,15 @@
     .container { max-width: 1080px; margin: 0 auto; }
 
     .section-label {
-      font-family: var(--font-s); font-size: 11px; font-weight: 500;
+      font-family: var(--font-h); font-size: 11px; font-weight: 500;
       letter-spacing: 0.2em; text-transform: uppercase;
       color: var(--accent); margin-bottom: 16px;
     }
     .section-title {
-      font-family: var(--font-d); font-weight: 400;
+      font-family: var(--font-h); font-weight: 300;
       font-size: clamp(32px, 4.5vw, 52px);
-      color: var(--charcoal); line-height: 1.15;
-      letter-spacing: -0.02em; margin-bottom: 24px;
+      color: var(--navy); line-height: 1.2;
+      letter-spacing: -0.01em; margin-bottom: 24px;
     }
 
     /* ── INTRO ── */
@@ -190,11 +216,11 @@
       align-items: center;
     }
     .intro-text p {
-      font-size: 16px; line-height: 1.8; color: var(--text);
+      font-size: 16px; line-height: 1.85; color: var(--text-body);
       margin-bottom: 16px;
     }
     .intro-img {
-      position: relative; border-radius: 4px; overflow: hidden;
+      position: relative; border-radius: 6px; overflow: hidden;
       aspect-ratio: 4/5;
     }
     .intro-img img {
@@ -204,7 +230,7 @@
     .intro-img:hover img { transform: scale(1.03); }
     .intro-img::after {
       content: ''; position: absolute; inset: 0;
-      border: 1px solid rgba(0,0,0,0.06); border-radius: 4px;
+      border: 1px solid rgba(45,39,85,0.06); border-radius: 6px;
       pointer-events: none;
     }
 
@@ -215,50 +241,50 @@
       margin-top: 48px;
     }
     .dienst-card {
-      background: var(--cream); border-radius: 4px;
+      background: var(--cream); border-radius: 6px;
       padding: 40px 32px;
-      border: 1px solid rgba(0,0,0,0.04);
+      border: 1px solid rgba(45,39,85,0.05);
       transition: transform 0.3s, box-shadow 0.3s;
     }
     .dienst-card:hover {
       transform: translateY(-4px);
-      box-shadow: 0 12px 40px rgba(0,0,0,0.06);
+      box-shadow: 0 12px 40px rgba(45,39,85,0.08);
     }
     .dienst-icon {
       width: 48px; height: 48px; border-radius: 50%;
-      background: rgba(110,95,173,0.10);
+      background: var(--warm);
       display: flex; align-items: center; justify-content: center;
       margin-bottom: 24px; font-size: 22px;
     }
     .dienst-card h3 {
-      font-family: var(--font-d); font-size: 24px; font-weight: 400;
-      color: var(--charcoal); margin-bottom: 12px;
+      font-family: var(--font-h); font-size: 22px; font-weight: 400;
+      color: var(--navy); margin-bottom: 12px;
     }
     .dienst-card p {
-      font-size: 14px; line-height: 1.7; color: var(--muted);
+      font-size: 14.5px; line-height: 1.75; color: var(--text-body);
     }
 
     /* ── TESTIMONIAL ── */
     .testimonial {
-      background: var(--accent); padding: 100px 24px;
+      background: var(--lavender); padding: 100px 24px;
       text-align: center; position: relative; overflow: hidden;
     }
     .testimonial::before {
-      content: '\201C'; position: absolute; top: 40px; left: 50%;
+      content: '\201C'; position: absolute; top: 20px; left: 50%;
       transform: translateX(-50%);
-      font-family: var(--font-d); font-size: 200px;
-      color: rgba(250,247,242,0.04); line-height: 1;
+      font-family: var(--font-logo); font-size: 240px;
+      color: rgba(255,255,255,0.15); line-height: 1;
       pointer-events: none;
     }
     .testimonial blockquote {
-      font-family: var(--font-d); font-size: clamp(18px, 2.5vw, 26px);
-      font-style: italic; font-weight: 400;
-      color: var(--cream); line-height: 1.7;
+      font-family: var(--font-h); font-size: clamp(20px, 2.8vw, 30px);
+      font-style: normal; font-weight: 300;
+      color: var(--navy); line-height: 1.6;
       max-width: 680px; margin: 0 auto 32px;
     }
     .testimonial cite {
-      font-family: var(--font-s); font-size: 13px; font-weight: 300;
-      color: rgba(250,247,245,0.6); letter-spacing: 0.08em;
+      font-family: var(--font-s); font-size: 13px; font-weight: 400;
+      color: var(--text); letter-spacing: 0.06em;
       font-style: normal;
     }
 
@@ -271,7 +297,7 @@
       gap: 12px; margin-top: 48px;
     }
     .galerij-item {
-      border-radius: 4px; overflow: hidden; position: relative;
+      border-radius: 6px; overflow: hidden; position: relative;
       cursor: pointer;
     }
     .galerij-item img {
@@ -285,7 +311,7 @@
     /* Lightbox */
     .lightbox {
       position: fixed; inset: 0; z-index: 1000;
-      background: rgba(20,18,16,0.92);
+      background: rgba(45,39,85,0.92);
       backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px);
       display: flex; align-items: center; justify-content: center;
       opacity: 0; pointer-events: none;
@@ -299,20 +325,19 @@
     }
     .lightbox.active img { transform: scale(1); }
     .lightbox-close {
-      position: absolute; top: 20px; right: 24px;
+      position: fixed; top: 20px; right: 24px;
       background: none; border: none; cursor: pointer;
-      font-size: 28px; color: rgba(250,247,242,0.6);
+      font-size: 28px; color: rgba(255,255,255,0.6);
       transition: color 0.3s; z-index: 1001;
-      position: fixed;
     }
-    .lightbox-close:hover { color: var(--cream); }
+    .lightbox-close:hover { color: #fff; }
     .lightbox-nav {
       position: fixed; top: 50%; transform: translateY(-50%);
       background: none; border: none; cursor: pointer;
-      font-size: 32px; color: rgba(250,247,242,0.5);
+      font-size: 32px; color: rgba(255,255,255,0.5);
       transition: color 0.3s; padding: 16px; z-index: 1001;
     }
-    .lightbox-nav:hover { color: var(--cream); }
+    .lightbox-nav:hover { color: #fff; }
     .lightbox-prev { left: 16px; }
     .lightbox-next { right: 16px; }
 
@@ -325,22 +350,22 @@
       align-items: start;
     }
     .contact-info p {
-      font-size: 16px; line-height: 1.8; color: var(--text);
+      font-size: 16px; line-height: 1.85; color: var(--text-body);
       margin-bottom: 32px;
     }
     .contact-link {
       display: inline-flex; align-items: center; gap: 12px;
       font-family: var(--font-s); font-size: 15px; font-weight: 400;
       color: var(--accent); text-decoration: none;
-      padding: 14px 0; border-bottom: 1px solid rgba(110,95,173,0.25);
-      width: 100%; transition: border-color 0.3s;
+      padding: 14px 0; border-bottom: 1px solid rgba(110,95,173,0.2);
+      width: 100%; transition: border-color 0.3s, color 0.3s;
       margin-bottom: 8px;
     }
-    .contact-link:hover { border-color: var(--accent); }
+    .contact-link:hover { border-color: var(--accent); color: var(--navy); }
     .contact-link svg { flex-shrink: 0; }
 
     .contact-img {
-      border-radius: 4px; overflow: hidden; aspect-ratio: 3/2;
+      border-radius: 6px; overflow: hidden; aspect-ratio: 3/2;
     }
     .contact-img img {
       width: 100%; height: 100%; object-fit: cover;
@@ -348,15 +373,15 @@
 
     /* ── FOOTER ── */
     footer {
-      background: var(--charcoal); padding: 40px 24px;
+      background: var(--navy); padding: 40px 24px;
       text-align: center;
     }
     footer p {
-      font-family: var(--font-s); font-size: 12px; font-weight: 300;
-      color: rgba(250,247,242,0.35); letter-spacing: 0.04em;
+      font-family: var(--font-h); font-size: 12px; font-weight: 300;
+      color: rgba(255,255,255,0.35); letter-spacing: 0.08em;
     }
-    footer a { color: rgba(250,247,242,0.5); text-decoration: none; }
-    footer a:hover { color: var(--cream); }
+    footer a { color: rgba(255,255,255,0.5); text-decoration: none; }
+    footer a:hover { color: #fff; }
 
     /* ── FADE IN ── */
     .fade-in {
@@ -373,19 +398,19 @@
       .nav-links.open {
         display: flex; flex-direction: column;
         position: fixed; top: 0; left: 0; right: 0; bottom: 0;
-        background: rgba(42,38,64,0.97);
+        background: rgba(45,39,85,0.97);
         backdrop-filter: blur(12px);
         justify-content: center; align-items: center; gap: 28px;
         z-index: 99;
       }
       .nav-links.open a {
-        font-size: 18px; color: var(--cream) !important;
+        font-size: 18px; color: #fff !important;
       }
       .nav-toggle { display: block; z-index: 101; }
       .nav-toggle.open span:nth-child(1) { transform: rotate(45deg) translate(5px, 5px); }
       .nav-toggle.open span:nth-child(2) { opacity: 0; }
       .nav-toggle.open span:nth-child(3) { transform: rotate(-45deg) translate(5px, -5px); }
-      .nav-toggle.open span { background: var(--cream) !important; }
+      .nav-toggle.open span { background: #fff !important; }
 
       .intro .container { grid-template-columns: 1fr; gap: 40px; }
       .intro-img { max-height: 400px; aspect-ratio: 3/2; }
@@ -400,14 +425,14 @@
     @media (max-width: 520px) {
       .galerij-grid { grid-template-columns: 1fr; grid-auto-rows: 220px; }
       .galerij-item.wide { grid-column: span 1; }
-      .hero-content h1 { font-size: 44px; }
+      .hero-content h1 { font-size: 52px; }
     }
   </style>
 </head>
 <body>
 
   <!-- NAV -->
-  <nav id="nav">
+  <nav id="nav" aria-label="Hoofdnavigatie">
     <a href="#" class="nav-logo">Wijsmakers</a>
     <ul class="nav-links" id="navLinks">
       <li><a href="#over">Over ons</a></li>
@@ -415,34 +440,35 @@
       <li><a href="#galerij">Galerij</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
-    <button class="nav-toggle" id="navToggle" aria-label="Menu">
+    <button class="nav-toggle" id="navToggle" aria-label="Menu openen">
       <span></span><span></span><span></span>
     </button>
   </nav>
 
   <!-- HERO -->
-  <section class="hero" id="hero">
-    <div class="hero-bg" role="img" aria-label="Wijsmakers tijdens een optreden"></div>
+  <header class="hero" id="hero">
+    <div class="hero-bg" role="img" aria-label="Wijsmakers trio speelt theater met piano tijdens een bruiloft"></div>
     <div class="hero-overlay"></div>
     <div class="hero-content">
-      <h1>Wijsmakers<em>theater &amp; muziek op maat</em></h1>
-      <p>Wij maken voorstellingen vol theater en muziek voor de momenten die onvergetelijk moeten zijn.</p>
-      <a href="#contact" class="hero-cta">Neem contact op</a>
+      <h1>Wijsmakers</h1>
+      <p class="hero-tagline">Theater &amp; Muziek op Maat</p>
+      <p>Theatrale voorstellingen vol muziek en humor — speciaal gemaakt voor jullie bruiloft, feest of jubileum.</p>
+      <a href="#contact" class="hero-cta">Boek een kennismaking</a>
     </div>
     <div class="hero-scroll"><span></span></div>
-  </section>
+  </header>
 
-  <!-- INTRO -->
+  <!-- OVER ONS -->
   <section class="intro" id="over">
     <div class="container">
       <div class="intro-text fade-in">
         <p class="section-label">Over ons</p>
-        <h2 class="section-title">Ruben, Mila<br/>&amp; Bram</h2>
-        <p>Wij van Wijsmakers maken voorstellingen op maat voor bedrijven en privé-gelegenheden. Met een combinatie van theater, muziek en humor creëren we voorstellingen die helemaal op maat gemaakt zijn voor jouw bijzondere gelegenheid.</p>
-        <p>We interviewen jullie, graven in de verhalen achter het verhaal, en vertalen dat naar een voorstelling die herkenning en ontroering brengt — maar vooral heel veel plezier.</p>
+        <h2 class="section-title">Ruben, Mila &amp; Bram</h2>
+        <p>Wij van Wijsmakers maken voorstellingen op maat voor bedrijven en privé-gelegenheden. Met theater, muziek en humor vertellen we jullie verhaal op een manier die raakt, verrast en verbindt.</p>
+        <p>Hoe dat werkt? We interviewen jullie en de mensen om jullie heen. Uit die gesprekken destilleren we de mooiste, grappigste en meest ontroerende verhalen — en vertalen die naar een voorstelling die niemand vergeet.</p>
       </div>
       <div class="intro-img fade-in">
-        <img src="img/wijsmakers-7.jpg" alt="Wijsmakers tijdens een voorstelling" loading="lazy"/>
+        <img src="img/wijsmakers-7.jpg" alt="Mila Werner en Ruben Wolbers van Wijsmakers tijdens een theatrale bruiloftsceremonie" loading="lazy"/>
       </div>
     </div>
   </section>
@@ -451,40 +477,40 @@
   <section class="diensten" id="diensten">
     <div class="container">
       <p class="section-label fade-in">Wat we doen</p>
-      <h2 class="section-title fade-in">Voorstellingen<br/>voor elk feest</h2>
+      <h2 class="section-title fade-in">Voorstellingen op maat<br/>voor elk feest</h2>
       <div class="diensten-grid">
         <div class="dienst-card fade-in">
           <div class="dienst-icon">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" color="#6E5FAD"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78L12 21.23l8.84-8.84a5.5 5.5 0 0 0 0-7.78z"/></svg>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#6E5FAD" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78L12 21.23l8.84-8.84a5.5 5.5 0 0 0 0-7.78z"/></svg>
           </div>
-          <h3>Bruiloften</h3>
-          <p>Jullie liefdesverhaal als theatrale voorstelling. We interviewen het bruidspaar, hun familie en vrienden, en maken er een persoonlijke show van die niemand vergeet.</p>
+          <h3>Theater bij je bruiloft</h3>
+          <p>Jullie liefdesverhaal verdient meer dan een standaard ceremonie. We interviewen het bruidspaar, familie en vrienden — en maken er een persoonlijke voorstelling van die lacht, ontroert en verrast.</p>
         </div>
         <div class="dienst-card fade-in">
           <div class="dienst-icon">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" color="#6E5FAD"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14l-5-4.87 6.91-1.01L12 2z"/></svg>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#6E5FAD" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14l-5-4.87 6.91-1.01L12 2z"/></svg>
           </div>
-          <h3>Feesten</h3>
-          <p>Een verjaardag, pensioen of ander feest verdient meer dan een speech. Wij maken er een voorstelling van met theater, muziek en de beste verhalen van de hoofdpersoon.</p>
+          <h3>Voorstelling bij je feest</h3>
+          <p>Een verjaardag, pensioen of ander feest verdient meer dan een toespraak. Wij maken er een theatrale show van met de beste verhalen van de hoofdpersoon — met muziek en humor.</p>
         </div>
         <div class="dienst-card fade-in">
           <div class="dienst-icon">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" color="#6E5FAD"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#6E5FAD" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg>
           </div>
-          <h3>Jubilea</h3>
-          <p>Of het nu een huwelijksjubileum is of een zakelijk lustrum — wij vangen de essentie van de gelegenheid en maken er iets bijzonders van.</p>
+          <h3>Show bij je jubileum</h3>
+          <p>Of het nu een huwelijksjubileum is of een zakelijk lustrum — wij vangen de essentie van de gelegenheid en maken er een voorstelling van die beklijft.</p>
         </div>
       </div>
     </div>
   </section>
 
   <!-- TESTIMONIAL -->
-  <section class="testimonial">
+  <section class="testimonial" aria-label="Klantervaring">
     <div class="container fade-in">
       <blockquote>
         &ldquo;Persoonlijk, uniek en gewoon heel erg goed! Ze wisten precies de juiste snaar te raken tijdens onze bruiloft!&rdquo;
       </blockquote>
-      <cite>&mdash; Sander (bruidegom)</cite>
+      <cite>&mdash; Sander, bruidegom</cite>
     </div>
   </section>
 
@@ -492,42 +518,42 @@
   <section class="galerij" id="galerij">
     <div class="container">
       <p class="section-label fade-in">Galerij</p>
-      <h2 class="section-title fade-in">Momenten<br/>in beeld</h2>
+      <h2 class="section-title fade-in">Momenten in beeld</h2>
       <div class="galerij-grid">
         <div class="galerij-item wide fade-in" data-index="0">
-          <img src="img/wijsmakers-6.jpg" alt="Wijsmakers breed podium overzicht" loading="lazy"/>
+          <img src="img/wijsmakers-6.jpg" alt="Theatrale bruiloftsceremonie met Wijsmakers bij historisch pand" loading="lazy"/>
         </div>
         <div class="galerij-item fade-in" data-index="1">
-          <img src="img/wijsmakers-4.jpg" alt="Ringceremonie begeleid door Wijsmakers" loading="lazy"/>
+          <img src="img/wijsmakers-4.jpg" alt="Bruidspaar wisselt ringen uit begeleid door Wijsmakers ceremoniemeester" loading="lazy"/>
         </div>
         <div class="galerij-item fade-in" data-index="2">
-          <img src="img/wijsmakers-8.jpg" alt="Twee performers in actie" loading="lazy"/>
+          <img src="img/wijsmakers-8.jpg" alt="Ruben Wolbers en Mila Werner van Wijsmakers tijdens optreden" loading="lazy"/>
         </div>
         <div class="galerij-item fade-in" data-index="3">
-          <img src="img/wijsmakers-3.jpg" alt="Performer met headset" loading="lazy"/>
+          <img src="img/wijsmakers-3.jpg" alt="Mila Werner performt met headset microfoon tijdens bruiloftsshow" loading="lazy"/>
         </div>
         <div class="galerij-item fade-in" data-index="4">
-          <img src="img/wijsmakers-9.jpg" alt="Performer aan lessenaar" loading="lazy"/>
+          <img src="img/wijsmakers-9.jpg" alt="Mila Werner van Wijsmakers aan lessenaar tijdens theatrale ceremonie" loading="lazy"/>
         </div>
         <div class="galerij-item wide fade-in" data-index="5">
-          <img src="img/wijsmakers-10.jpg" alt="Publiek tijdens voorstelling" loading="lazy"/>
+          <img src="img/wijsmakers-10.jpg" alt="Publiek geniet van Wijsmakers voorstelling bij buitenlocatie" loading="lazy"/>
         </div>
         <div class="galerij-item fade-in" data-index="6">
-          <img src="img/wijsmakers-2.jpg" alt="Performer op podium" loading="lazy"/>
+          <img src="img/wijsmakers-2.jpg" alt="Ruben Wolbers van Wijsmakers op het podium tijdens theatrale show" loading="lazy"/>
         </div>
         <div class="galerij-item fade-in" data-index="7">
-          <img src="img/wijsmakers-5.jpg" alt="Theatraal moment tijdens optreden" loading="lazy"/>
+          <img src="img/wijsmakers-5.jpg" alt="Theatraal dansmoment tijdens Wijsmakers bruiloftsvoorstelling" loading="lazy"/>
         </div>
       </div>
     </div>
   </section>
 
   <!-- LIGHTBOX -->
-  <div class="lightbox" id="lightbox">
+  <div class="lightbox" id="lightbox" role="dialog" aria-label="Foto vergroting">
     <button class="lightbox-close" id="lightboxClose" aria-label="Sluiten">&times;</button>
-    <button class="lightbox-nav lightbox-prev" id="lightboxPrev" aria-label="Vorige">&#8249;</button>
+    <button class="lightbox-nav lightbox-prev" id="lightboxPrev" aria-label="Vorige foto">&#8249;</button>
     <img src="" alt="" id="lightboxImg"/>
-    <button class="lightbox-nav lightbox-next" id="lightboxNext" aria-label="Volgende">&#8250;</button>
+    <button class="lightbox-nav lightbox-next" id="lightboxNext" aria-label="Volgende foto">&#8250;</button>
   </div>
 
   <!-- CONTACT -->
@@ -535,8 +561,8 @@
     <div class="container">
       <div class="fade-in">
         <p class="section-label">Contact</p>
-        <h2 class="section-title">Laten we<br/>kennismaken</h2>
-        <p>Benieuwd wat Wijsmakers voor jullie feest kan betekenen? Neem vrijblijvend contact op. We denken graag mee.</p>
+        <h2 class="section-title">Vertel ons over<br/>jullie feest</h2>
+        <p>Benieuwd wat Wijsmakers voor jullie bruiloft, feest of jubileum kan betekenen? Neem vrijblijvend contact op — we denken graag mee over de mogelijkheden.</p>
         <a href="mailto:info@wijsmakers.nl" class="contact-link">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
           info@wijsmakers.nl
@@ -547,7 +573,7 @@
         </a>
       </div>
       <div class="contact-img fade-in">
-        <img src="img/wijsmakers-1.jpg" alt="Het Wijsmakers trio" loading="lazy"/>
+        <img src="img/wijsmakers-1.jpg" alt="Bram Wikkerink, Ruben Wolbers en Mila Werner — het Wijsmakers trio aan de piano" loading="lazy"/>
       </div>
     </div>
   </section>
