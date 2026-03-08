@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Wijsmakers — Theater &amp; Muziek op Maat</title>
+  <meta name="description" content="Wijsmakers maakt voorstellingen op maat vol theater en muziek. Voor bruiloften, feesten en jubilea die onvergetelijk moeten zijn."/>
+  <link rel="canonical" href="https://wijsmakers.nl/"/>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg"/>
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://wijsmakers.nl/"/>
+  <meta property="og:title" content="Wijsmakers — Theater &amp; Muziek op Maat"/>
+  <meta property="og:description" content="Wijsmakers maakt voorstellingen op maat vol theater en muziek. Voor bruiloften, feesten en jubilea die onvergetelijk moeten zijn."/>
+  <meta property="og:image" content="https://wijsmakers.nl/img/wijsmakers-1.jpg"/>
+
+  <!-- JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "PerformingGroup",
+    "name": "Wijsmakers",
+    "url": "https://wijsmakers.nl",
+    "description": "Theatergroep die voorstellingen op maat maakt vol theater en muziek voor bruiloften, feesten en jubilea.",
+    "address": { "@type": "PostalAddress", "addressCountry": "NL" },
+    "sameAs": [
+      "https://instagram.com/wijsmakers"
+    ]
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet"/>
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --cream:     #FAF7F2;
+      --warm:      #F3EDE4;
+      --charcoal:  #2D2926;
+      --text:      #4A4541;
+      --muted:     #8A8279;
+      --accent:    #C65D3E;
+      --accent-l:  #D4763C;
+      --gold:      #D4A853;
+      --sage:      #8B9E82;
+      --font-d:    'Playfair Display', Georgia, serif;
+      --font-s:    'Inter', -apple-system, sans-serif;
+    }
+
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: var(--font-s);
+      background: var(--cream);
+      color: var(--text);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .sr-only {
+      position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
+      overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0;
+    }
+
+    /* ── NAV ── */
+    nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      padding: 20px 40px;
+      display: flex; justify-content: space-between; align-items: center;
+      transition: background 0.4s, padding 0.4s, box-shadow 0.4s;
+    }
+    nav.scrolled {
+      background: rgba(250,247,242,0.92);
+      backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px);
+      padding: 14px 40px;
+      box-shadow: 0 1px 0 rgba(0,0,0,0.06);
+    }
+    .nav-logo {
+      font-family: var(--font-d); font-size: 22px; font-weight: 600;
+      color: var(--cream); text-decoration: none;
+      letter-spacing: -0.02em;
+      transition: color 0.4s;
+    }
+    nav.scrolled .nav-logo { color: var(--charcoal); }
+    .nav-links { display: flex; gap: 32px; list-style: none; }
+    .nav-links a {
+      font-size: 13px; font-weight: 400; letter-spacing: 0.06em;
+      text-transform: uppercase; text-decoration: none;
+      color: rgba(250,247,242,0.7);
+      transition: color 0.3s;
+    }
+    .nav-links a:hover { color: var(--cream); }
+    nav.scrolled .nav-links a { color: var(--muted); }
+    nav.scrolled .nav-links a:hover { color: var(--charcoal); }
+
+    .nav-toggle { display: none; background: none; border: none; cursor: pointer; padding: 4px; }
+    .nav-toggle span {
+      display: block; width: 24px; height: 2px; margin: 5px 0;
+      background: var(--cream); transition: background 0.3s, transform 0.3s, opacity 0.3s;
+    }
+    nav.scrolled .nav-toggle span { background: var(--charcoal); }
+
+    /* ── HERO ── */
+    .hero {
+      position: relative; min-height: 100vh; overflow: hidden;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .hero-bg {
+      position: absolute; inset: 0;
+      background: url('img/wijsmakers-1.jpg') center 25% / cover no-repeat;
+    }
+    .hero-overlay {
+      position: absolute; inset: 0;
+      background: linear-gradient(
+        to bottom,
+        rgba(30,25,22,0.25) 0%,
+        rgba(30,25,22,0.50) 50%,
+        rgba(30,25,22,0.80) 100%
+      );
+    }
+    .hero-content {
+      position: relative; z-index: 2; text-align: center;
+      padding: 0 24px; max-width: 720px;
+    }
+    .hero-content h1 {
+      font-family: var(--font-d); font-weight: 400;
+      font-size: clamp(48px, 8vw, 96px);
+      color: var(--cream); line-height: 1;
+      letter-spacing: -0.03em; margin-bottom: 20px;
+    }
+    .hero-content h1 em {
+      display: block; font-style: italic; color: var(--gold);
+      font-size: 0.55em; margin-top: 8px;
+    }
+    .hero-content p {
+      font-family: var(--font-s); font-size: 16px; font-weight: 300;
+      color: rgba(250,247,242,0.75); max-width: 480px; margin: 0 auto 36px;
+      line-height: 1.7;
+    }
+    .hero-cta {
+      display: inline-block; padding: 14px 40px;
+      font-family: var(--font-s); font-size: 13px; font-weight: 500;
+      letter-spacing: 0.12em; text-transform: uppercase;
+      color: var(--cream); text-decoration: none;
+      border: 1px solid rgba(250,247,242,0.4);
+      border-radius: 2px;
+      transition: background 0.3s, border-color 0.3s;
+    }
+    .hero-cta:hover {
+      background: rgba(250,247,242,0.12);
+      border-color: rgba(250,247,242,0.7);
+    }
+    .hero-scroll {
+      position: absolute; bottom: 32px; left: 50%; transform: translateX(-50%);
+      z-index: 2;
+    }
+    .hero-scroll span {
+      display: block; width: 1px; height: 48px;
+      background: linear-gradient(to bottom, transparent, rgba(250,247,242,0.5));
+      animation: scrollPulse 2s ease-in-out infinite;
+    }
+    @keyframes scrollPulse {
+      0%, 100% { opacity: 0.3; transform: scaleY(0.6); }
+      50%      { opacity: 1;   transform: scaleY(1); }
+    }
+
+    /* ── SECTIONS ── */
+    section { padding: 100px 24px; }
+    .container { max-width: 1080px; margin: 0 auto; }
+
+    .section-label {
+      font-family: var(--font-s); font-size: 11px; font-weight: 500;
+      letter-spacing: 0.2em; text-transform: uppercase;
+      color: var(--accent); margin-bottom: 16px;
+    }
+    .section-title {
+      font-family: var(--font-d); font-weight: 400;
+      font-size: clamp(32px, 4.5vw, 52px);
+      color: var(--charcoal); line-height: 1.15;
+      letter-spacing: -0.02em; margin-bottom: 24px;
+    }
+
+    /* ── INTRO ── */
+    .intro { background: var(--cream); }
+    .intro .container {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 64px;
+      align-items: center;
+    }
+    .intro-text p {
+      font-size: 16px; line-height: 1.8; color: var(--text);
+      margin-bottom: 16px;
+    }
+    .intro-img {
+      position: relative; border-radius: 4px; overflow: hidden;
+      aspect-ratio: 4/5;
+    }
+    .intro-img img {
+      width: 100%; height: 100%; object-fit: cover;
+      transition: transform 0.6s ease;
+    }
+    .intro-img:hover img { transform: scale(1.03); }
+    .intro-img::after {
+      content: ''; position: absolute; inset: 0;
+      border: 1px solid rgba(0,0,0,0.06); border-radius: 4px;
+      pointer-events: none;
+    }
+
+    /* ── DIENSTEN ── */
+    .diensten { background: var(--warm); }
+    .diensten-grid {
+      display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px;
+      margin-top: 48px;
+    }
+    .dienst-card {
+      background: var(--cream); border-radius: 4px;
+      padding: 40px 32px;
+      border: 1px solid rgba(0,0,0,0.04);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .dienst-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 40px rgba(0,0,0,0.06);
+    }
+    .dienst-icon {
+      width: 48px; height: 48px; border-radius: 50%;
+      background: rgba(198,93,62,0.08);
+      display: flex; align-items: center; justify-content: center;
+      margin-bottom: 24px; font-size: 22px;
+    }
+    .dienst-card h3 {
+      font-family: var(--font-d); font-size: 24px; font-weight: 400;
+      color: var(--charcoal); margin-bottom: 12px;
+    }
+    .dienst-card p {
+      font-size: 14px; line-height: 1.7; color: var(--muted);
+    }
+
+    /* ── TESTIMONIAL ── */
+    .testimonial {
+      background: var(--charcoal); padding: 100px 24px;
+      text-align: center; position: relative; overflow: hidden;
+    }
+    .testimonial::before {
+      content: '\201C'; position: absolute; top: 40px; left: 50%;
+      transform: translateX(-50%);
+      font-family: var(--font-d); font-size: 200px;
+      color: rgba(250,247,242,0.04); line-height: 1;
+      pointer-events: none;
+    }
+    .testimonial blockquote {
+      font-family: var(--font-d); font-size: clamp(18px, 2.5vw, 26px);
+      font-style: italic; font-weight: 400;
+      color: var(--cream); line-height: 1.7;
+      max-width: 680px; margin: 0 auto 32px;
+    }
+    .testimonial cite {
+      font-family: var(--font-s); font-size: 13px; font-weight: 300;
+      color: var(--gold); letter-spacing: 0.08em;
+      font-style: normal;
+    }
+
+    /* ── GALERIJ ── */
+    .galerij { background: var(--cream); }
+    .galerij-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-auto-rows: 260px;
+      gap: 12px; margin-top: 48px;
+    }
+    .galerij-item {
+      border-radius: 4px; overflow: hidden; position: relative;
+      cursor: pointer;
+    }
+    .galerij-item img {
+      width: 100%; height: 100%; object-fit: cover;
+      transition: transform 0.5s ease;
+    }
+    .galerij-item:hover img { transform: scale(1.05); }
+    .galerij-item.wide  { grid-column: span 2; }
+    .galerij-item.tall  { grid-row: span 2; }
+
+    /* Lightbox */
+    .lightbox {
+      position: fixed; inset: 0; z-index: 1000;
+      background: rgba(20,18,16,0.92);
+      backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px);
+      display: flex; align-items: center; justify-content: center;
+      opacity: 0; pointer-events: none;
+      transition: opacity 0.4s;
+    }
+    .lightbox.active { opacity: 1; pointer-events: auto; }
+    .lightbox img {
+      max-width: 90vw; max-height: 88vh;
+      border-radius: 4px; object-fit: contain;
+      transform: scale(0.94); transition: transform 0.4s ease;
+    }
+    .lightbox.active img { transform: scale(1); }
+    .lightbox-close {
+      position: absolute; top: 20px; right: 24px;
+      background: none; border: none; cursor: pointer;
+      font-size: 28px; color: rgba(250,247,242,0.6);
+      transition: color 0.3s; z-index: 1001;
+      position: fixed;
+    }
+    .lightbox-close:hover { color: var(--cream); }
+    .lightbox-nav {
+      position: fixed; top: 50%; transform: translateY(-50%);
+      background: none; border: none; cursor: pointer;
+      font-size: 32px; color: rgba(250,247,242,0.5);
+      transition: color 0.3s; padding: 16px; z-index: 1001;
+    }
+    .lightbox-nav:hover { color: var(--cream); }
+    .lightbox-prev { left: 16px; }
+    .lightbox-next { right: 16px; }
+
+    /* ── CONTACT ── */
+    .contact {
+      background: var(--warm); padding: 100px 24px;
+    }
+    .contact .container {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 64px;
+      align-items: start;
+    }
+    .contact-info p {
+      font-size: 16px; line-height: 1.8; color: var(--text);
+      margin-bottom: 32px;
+    }
+    .contact-link {
+      display: inline-flex; align-items: center; gap: 12px;
+      font-family: var(--font-s); font-size: 15px; font-weight: 400;
+      color: var(--accent); text-decoration: none;
+      padding: 14px 0; border-bottom: 1px solid rgba(198,93,62,0.2);
+      width: 100%; transition: border-color 0.3s;
+      margin-bottom: 8px;
+    }
+    .contact-link:hover { border-color: var(--accent); }
+    .contact-link svg { flex-shrink: 0; }
+
+    .contact-img {
+      border-radius: 4px; overflow: hidden; aspect-ratio: 3/2;
+    }
+    .contact-img img {
+      width: 100%; height: 100%; object-fit: cover;
+    }
+
+    /* ── FOOTER ── */
+    footer {
+      background: var(--charcoal); padding: 40px 24px;
+      text-align: center;
+    }
+    footer p {
+      font-family: var(--font-s); font-size: 12px; font-weight: 300;
+      color: rgba(250,247,242,0.35); letter-spacing: 0.04em;
+    }
+    footer a { color: rgba(250,247,242,0.5); text-decoration: none; }
+    footer a:hover { color: var(--cream); }
+
+    /* ── FADE IN ── */
+    .fade-in {
+      opacity: 0; transform: translateY(24px);
+      transition: opacity 0.7s ease, transform 0.7s ease;
+    }
+    .fade-in.visible { opacity: 1; transform: translateY(0); }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 900px) {
+      nav { padding: 16px 24px; }
+      nav.scrolled { padding: 12px 24px; }
+      .nav-links { display: none; }
+      .nav-links.open {
+        display: flex; flex-direction: column;
+        position: fixed; top: 0; left: 0; right: 0; bottom: 0;
+        background: rgba(45,41,38,0.97);
+        backdrop-filter: blur(12px);
+        justify-content: center; align-items: center; gap: 28px;
+        z-index: 99;
+      }
+      .nav-links.open a {
+        font-size: 18px; color: var(--cream) !important;
+      }
+      .nav-toggle { display: block; z-index: 101; }
+      .nav-toggle.open span:nth-child(1) { transform: rotate(45deg) translate(5px, 5px); }
+      .nav-toggle.open span:nth-child(2) { opacity: 0; }
+      .nav-toggle.open span:nth-child(3) { transform: rotate(-45deg) translate(5px, -5px); }
+      .nav-toggle.open span { background: var(--cream) !important; }
+
+      .intro .container { grid-template-columns: 1fr; gap: 40px; }
+      .intro-img { max-height: 400px; aspect-ratio: 3/2; }
+      .diensten-grid { grid-template-columns: 1fr; }
+      .galerij-grid { grid-template-columns: 1fr 1fr; grid-auto-rows: 200px; }
+      .galerij-item.wide { grid-column: span 2; }
+      .galerij-item.tall { grid-row: span 1; }
+      .contact .container { grid-template-columns: 1fr; gap: 40px; }
+      section { padding: 72px 24px; }
+    }
+
+    @media (max-width: 520px) {
+      .galerij-grid { grid-template-columns: 1fr; grid-auto-rows: 220px; }
+      .galerij-item.wide { grid-column: span 1; }
+      .hero-content h1 { font-size: 44px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav id="nav">
+    <a href="#" class="nav-logo">Wijsmakers</a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#over">Over ons</a></li>
+      <li><a href="#diensten">Wat we doen</a></li>
+      <li><a href="#galerij">Galerij</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero-bg" role="img" aria-label="Wijsmakers tijdens een optreden"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1>Wijsmakers<em>theater &amp; muziek op maat</em></h1>
+      <p>Wij maken voorstellingen vol theater en muziek voor de momenten die onvergetelijk moeten zijn.</p>
+      <a href="#contact" class="hero-cta">Neem contact op</a>
+    </div>
+    <div class="hero-scroll"><span></span></div>
+  </section>
+
+  <!-- INTRO -->
+  <section class="intro" id="over">
+    <div class="container">
+      <div class="intro-text fade-in">
+        <p class="section-label">Over ons</p>
+        <h2 class="section-title">Wolbers, Werner<br/>&amp; Wikkerink</h2>
+        <p>Wijsmakers is een theatergroep van drie makers die samen komen in wat ze het liefst doen: verhalen vertellen. Met een combinatie van theater, muziek en humor creëren we voorstellingen die helemaal op maat gemaakt zijn voor jouw bijzondere gelegenheid.</p>
+        <p>We interviewen jullie, graven in de verhalen achter het verhaal, en vertalen dat naar een voorstelling die herkenning en ontroering brengt — maar vooral heel veel plezier.</p>
+      </div>
+      <div class="intro-img fade-in">
+        <img src="img/wijsmakers-7.jpg" alt="Wijsmakers tijdens een voorstelling" loading="lazy"/>
+      </div>
+    </div>
+  </section>
+
+  <!-- DIENSTEN -->
+  <section class="diensten" id="diensten">
+    <div class="container">
+      <p class="section-label fade-in">Wat we doen</p>
+      <h2 class="section-title fade-in">Voorstellingen<br/>voor elk feest</h2>
+      <div class="diensten-grid">
+        <div class="dienst-card fade-in">
+          <div class="dienst-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" color="#C65D3E"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78L12 21.23l8.84-8.84a5.5 5.5 0 0 0 0-7.78z"/></svg>
+          </div>
+          <h3>Bruiloften</h3>
+          <p>Jullie liefdesverhaal als theatrale voorstelling. We interviewen het bruidspaar, hun familie en vrienden, en maken er een persoonlijke show van die niemand vergeet.</p>
+        </div>
+        <div class="dienst-card fade-in">
+          <div class="dienst-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" color="#C65D3E"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14l-5-4.87 6.91-1.01L12 2z"/></svg>
+          </div>
+          <h3>Feesten</h3>
+          <p>Een verjaardag, pensioen of ander feest verdient meer dan een speech. Wij maken er een voorstelling van met theater, muziek en de beste verhalen van de hoofdpersoon.</p>
+        </div>
+        <div class="dienst-card fade-in">
+          <div class="dienst-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" color="#C65D3E"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg>
+          </div>
+          <h3>Jubilea</h3>
+          <p>Of het nu een huwelijksjubileum is of een zakelijk lustrum — wij vangen de essentie van de gelegenheid en maken er iets bijzonders van.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIAL -->
+  <section class="testimonial">
+    <div class="container fade-in">
+      <blockquote>
+        &ldquo;Een originele en creatieve manier om een huwelijksceremonie vorm te geven. Ze vertaalden interviews met ons als bruidspaar naar een voorstelling die herkenning en plezier gaf voor vrienden en familie.&rdquo;
+      </blockquote>
+      <cite>&mdash; Bruidspaar, 2024</cite>
+    </div>
+  </section>
+
+  <!-- GALERIJ -->
+  <section class="galerij" id="galerij">
+    <div class="container">
+      <p class="section-label fade-in">Galerij</p>
+      <h2 class="section-title fade-in">Momenten<br/>in beeld</h2>
+      <div class="galerij-grid">
+        <div class="galerij-item wide fade-in" data-index="0">
+          <img src="img/wijsmakers-6.jpg" alt="Wijsmakers breed podium overzicht" loading="lazy"/>
+        </div>
+        <div class="galerij-item fade-in" data-index="1">
+          <img src="img/wijsmakers-4.jpg" alt="Ringceremonie begeleid door Wijsmakers" loading="lazy"/>
+        </div>
+        <div class="galerij-item fade-in" data-index="2">
+          <img src="img/wijsmakers-8.jpg" alt="Twee performers in actie" loading="lazy"/>
+        </div>
+        <div class="galerij-item fade-in" data-index="3">
+          <img src="img/wijsmakers-3.jpg" alt="Performer met headset" loading="lazy"/>
+        </div>
+        <div class="galerij-item fade-in" data-index="4">
+          <img src="img/wijsmakers-9.jpg" alt="Performer aan lessenaar" loading="lazy"/>
+        </div>
+        <div class="galerij-item wide fade-in" data-index="5">
+          <img src="img/wijsmakers-10.jpg" alt="Publiek tijdens voorstelling" loading="lazy"/>
+        </div>
+        <div class="galerij-item fade-in" data-index="6">
+          <img src="img/wijsmakers-2.jpg" alt="Performer op podium" loading="lazy"/>
+        </div>
+        <div class="galerij-item fade-in" data-index="7">
+          <img src="img/wijsmakers-5.jpg" alt="Theatraal moment tijdens optreden" loading="lazy"/>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LIGHTBOX -->
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox-close" id="lightboxClose" aria-label="Sluiten">&times;</button>
+    <button class="lightbox-nav lightbox-prev" id="lightboxPrev" aria-label="Vorige">&#8249;</button>
+    <img src="" alt="" id="lightboxImg"/>
+    <button class="lightbox-nav lightbox-next" id="lightboxNext" aria-label="Volgende">&#8250;</button>
+  </div>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="fade-in">
+        <p class="section-label">Contact</p>
+        <h2 class="section-title">Laten we<br/>kennismaken</h2>
+        <p>Benieuwd wat Wijsmakers voor jullie feest kan betekenen? Neem vrijblijvend contact op. We denken graag mee.</p>
+        <a href="mailto:info@wijsmakers.nl" class="contact-link">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          info@wijsmakers.nl
+        </a>
+        <a href="https://instagram.com/wijsmakers" target="_blank" rel="noopener" class="contact-link">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          @wijsmakers
+        </a>
+      </div>
+      <div class="contact-img fade-in">
+        <img src="img/wijsmakers-1.jpg" alt="Het Wijsmakers trio" loading="lazy"/>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; 2025 Wijsmakers &middot; Wolbers, Werner &amp; Wikkerink</p>
+  </footer>
+
+  <script>
+    /* ── Nav scroll effect ── */
+    const nav = document.getElementById('nav');
+    window.addEventListener('scroll', () => {
+      nav.classList.toggle('scrolled', window.scrollY > 60);
+    });
+
+    /* ── Mobile menu ── */
+    const toggle = document.getElementById('navToggle');
+    const links = document.getElementById('navLinks');
+    toggle.addEventListener('click', () => {
+      toggle.classList.toggle('open');
+      links.classList.toggle('open');
+    });
+    links.querySelectorAll('a').forEach(a => {
+      a.addEventListener('click', () => {
+        toggle.classList.remove('open');
+        links.classList.remove('open');
+      });
+    });
+
+    /* ── Fade in on scroll ── */
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.classList.add('visible');
+          observer.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.15 });
+    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+    /* ── Lightbox ── */
+    const galleryImages = [
+      'img/wijsmakers-6.jpg', 'img/wijsmakers-4.jpg',
+      'img/wijsmakers-8.jpg', 'img/wijsmakers-3.jpg',
+      'img/wijsmakers-9.jpg', 'img/wijsmakers-10.jpg',
+      'img/wijsmakers-2.jpg', 'img/wijsmakers-5.jpg'
+    ];
+    let currentIndex = 0;
+    const lightbox = document.getElementById('lightbox');
+    const lbImg = document.getElementById('lightboxImg');
+
+    document.querySelectorAll('.galerij-item').forEach(item => {
+      item.addEventListener('click', () => {
+        currentIndex = parseInt(item.dataset.index);
+        lbImg.src = galleryImages[currentIndex];
+        lightbox.classList.add('active');
+        document.body.style.overflow = 'hidden';
+      });
+    });
+
+    function closeLightbox() {
+      lightbox.classList.remove('active');
+      document.body.style.overflow = '';
+    }
+
+    document.getElementById('lightboxClose').addEventListener('click', closeLightbox);
+    lightbox.addEventListener('click', (e) => {
+      if (e.target === lightbox) closeLightbox();
+    });
+
+    document.getElementById('lightboxPrev').addEventListener('click', (e) => {
+      e.stopPropagation();
+      currentIndex = (currentIndex - 1 + galleryImages.length) % galleryImages.length;
+      lbImg.src = galleryImages[currentIndex];
+    });
+    document.getElementById('lightboxNext').addEventListener('click', (e) => {
+      e.stopPropagation();
+      currentIndex = (currentIndex + 1) % galleryImages.length;
+      lbImg.src = galleryImages[currentIndex];
+    });
+
+    document.addEventListener('keydown', (e) => {
+      if (!lightbox.classList.contains('active')) return;
+      if (e.key === 'Escape') closeLightbox();
+      if (e.key === 'ArrowLeft') document.getElementById('lightboxPrev').click();
+      if (e.key === 'ArrowRight') document.getElementById('lightboxNext').click();
+    });
+  </script>
+
+</body>
+</html>
