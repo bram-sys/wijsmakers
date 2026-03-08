@@ -38,15 +38,15 @@
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
     :root {
-      --cream:     #FAF7F2;
-      --warm:      #F3EDE4;
-      --charcoal:  #2D2926;
-      --text:      #4A4541;
-      --muted:     #8A8279;
-      --accent:    #C65D3E;
-      --accent-l:  #D4763C;
-      --gold:      #D4A853;
-      --sage:      #8B9E82;
+      --cream:     #FAF7F5;
+      --warm:      #F0ECF4;
+      --charcoal:  #2A2640;
+      --text:      #3D3956;
+      --muted:     #7E7A8F;
+      --accent:    #6E5FAD;
+      --accent-l:  #8474C0;
+      --gold:      #6E5FAD;
+      --sage:      #9B8DC8;
       --font-d:    'Playfair Display', Georgia, serif;
       --font-s:    'Inter', -apple-system, sans-serif;
     }
@@ -116,9 +116,9 @@
       position: absolute; inset: 0;
       background: linear-gradient(
         to bottom,
-        rgba(30,25,22,0.25) 0%,
-        rgba(30,25,22,0.50) 50%,
-        rgba(30,25,22,0.80) 100%
+        rgba(42,38,64,0.30) 0%,
+        rgba(42,38,64,0.55) 50%,
+        rgba(42,38,64,0.85) 100%
       );
     }
     .hero-content {
@@ -150,8 +150,8 @@
       transition: background 0.3s, border-color 0.3s;
     }
     .hero-cta:hover {
-      background: rgba(250,247,242,0.12);
-      border-color: rgba(250,247,242,0.7);
+      background: var(--accent);
+      border-color: var(--accent);
     }
     .hero-scroll {
       position: absolute; bottom: 32px; left: 50%; transform: translateX(-50%);
@@ -226,7 +226,7 @@
     }
     .dienst-icon {
       width: 48px; height: 48px; border-radius: 50%;
-      background: rgba(198,93,62,0.08);
+      background: rgba(110,95,173,0.10);
       display: flex; align-items: center; justify-content: center;
       margin-bottom: 24px; font-size: 22px;
     }
@@ -240,7 +240,7 @@
 
     /* ── TESTIMONIAL ── */
     .testimonial {
-      background: var(--charcoal); padding: 100px 24px;
+      background: var(--accent); padding: 100px 24px;
       text-align: center; position: relative; overflow: hidden;
     }
     .testimonial::before {
@@ -258,7 +258,7 @@
     }
     .testimonial cite {
       font-family: var(--font-s); font-size: 13px; font-weight: 300;
-      color: var(--gold); letter-spacing: 0.08em;
+      color: rgba(250,247,245,0.6); letter-spacing: 0.08em;
       font-style: normal;
     }
 
@@ -332,7 +332,7 @@
       display: inline-flex; align-items: center; gap: 12px;
       font-family: var(--font-s); font-size: 15px; font-weight: 400;
       color: var(--accent); text-decoration: none;
-      padding: 14px 0; border-bottom: 1px solid rgba(198,93,62,0.2);
+      padding: 14px 0; border-bottom: 1px solid rgba(110,95,173,0.25);
       width: 100%; transition: border-color 0.3s;
       margin-bottom: 8px;
     }
@@ -373,7 +373,7 @@
       .nav-links.open {
         display: flex; flex-direction: column;
         position: fixed; top: 0; left: 0; right: 0; bottom: 0;
-        background: rgba(45,41,38,0.97);
+        background: rgba(42,38,64,0.97);
         backdrop-filter: blur(12px);
         justify-content: center; align-items: center; gap: 28px;
         z-index: 99;
@@ -437,8 +437,8 @@
     <div class="container">
       <div class="intro-text fade-in">
         <p class="section-label">Over ons</p>
-        <h2 class="section-title">Wolbers, Werner<br/>&amp; Wikkerink</h2>
-        <p>Wijsmakers is een theatergroep van drie makers die samen komen in wat ze het liefst doen: verhalen vertellen. Met een combinatie van theater, muziek en humor creëren we voorstellingen die helemaal op maat gemaakt zijn voor jouw bijzondere gelegenheid.</p>
+        <h2 class="section-title">Ruben, Mila<br/>&amp; Bram</h2>
+        <p>Wij van Wijsmakers maken voorstellingen op maat voor bedrijven en privé-gelegenheden. Met een combinatie van theater, muziek en humor creëren we voorstellingen die helemaal op maat gemaakt zijn voor jouw bijzondere gelegenheid.</p>
         <p>We interviewen jullie, graven in de verhalen achter het verhaal, en vertalen dat naar een voorstelling die herkenning en ontroering brengt — maar vooral heel veel plezier.</p>
       </div>
       <div class="intro-img fade-in">
@@ -455,21 +455,21 @@
       <div class="diensten-grid">
         <div class="dienst-card fade-in">
           <div class="dienst-icon">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" color="#C65D3E"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78L12 21.23l8.84-8.84a5.5 5.5 0 0 0 0-7.78z"/></svg>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" color="#6E5FAD"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78L12 21.23l8.84-8.84a5.5 5.5 0 0 0 0-7.78z"/></svg>
           </div>
           <h3>Bruiloften</h3>
           <p>Jullie liefdesverhaal als theatrale voorstelling. We interviewen het bruidspaar, hun familie en vrienden, en maken er een persoonlijke show van die niemand vergeet.</p>
         </div>
         <div class="dienst-card fade-in">
           <div class="dienst-icon">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" color="#C65D3E"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14l-5-4.87 6.91-1.01L12 2z"/></svg>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" color="#6E5FAD"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14l-5-4.87 6.91-1.01L12 2z"/></svg>
           </div>
           <h3>Feesten</h3>
           <p>Een verjaardag, pensioen of ander feest verdient meer dan een speech. Wij maken er een voorstelling van met theater, muziek en de beste verhalen van de hoofdpersoon.</p>
         </div>
         <div class="dienst-card fade-in">
           <div class="dienst-icon">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" color="#C65D3E"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" color="#6E5FAD"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg>
           </div>
           <h3>Jubilea</h3>
           <p>Of het nu een huwelijksjubileum is of een zakelijk lustrum — wij vangen de essentie van de gelegenheid en maken er iets bijzonders van.</p>
@@ -482,9 +482,9 @@
   <section class="testimonial">
     <div class="container fade-in">
       <blockquote>
-        &ldquo;Een originele en creatieve manier om een huwelijksceremonie vorm te geven. Ze vertaalden interviews met ons als bruidspaar naar een voorstelling die herkenning en plezier gaf voor vrienden en familie.&rdquo;
+        &ldquo;Persoonlijk, uniek en gewoon heel erg goed! Ze wisten precies de juiste snaar te raken tijdens onze bruiloft!&rdquo;
       </blockquote>
-      <cite>&mdash; Bruidspaar, 2024</cite>
+      <cite>&mdash; Sander (bruidegom)</cite>
     </div>
   </section>
 
@@ -554,7 +554,7 @@
 
   <!-- FOOTER -->
   <footer>
-    <p>&copy; 2025 Wijsmakers &middot; Wolbers, Werner &amp; Wikkerink</p>
+    <p>&copy; 2025 Wijsmakers &middot; Bram, Mila &amp; Ruben</p>
   </footer>
 
   <script>
