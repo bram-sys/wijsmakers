@@ -4,8 +4,8 @@
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Wijsmakers — Theatrale Voorstellingen op Maat voor Bruiloften &amp; Feesten</title>
-  <meta name="description" content="Wijsmakers maakt theatrale voorstellingen op maat voor bruiloften, feesten en jubilea in heel Nederland. Persoonlijk, muzikaal en onvergetelijk. Boek Bram, Mila en Ruben."/>
-  <meta name="keywords" content="theater op maat, bruiloft entertainment, trouwceremonie theater, feest voorstelling, jubileum show, theatrale bruiloft Nederland"/>
+  <meta name="description" content="Wijsmakers maakt theatrale voorstellingen op maat voor bruiloften, feesten, jubilea en bedrijfsevenementen in heel Nederland. Persoonlijk, muzikaal en onvergetelijk. Boek Bram, Mila en Ruben."/>
+  <meta name="keywords" content="theater op maat, bruiloft entertainment, trouwceremonie theater, feest voorstelling, jubileum show, bedrijfsevenement, awardshow, theatrale bruiloft Nederland"/>
   <link rel="canonical" href="https://wijsmakers.nl/"/>
   <link rel="icon" type="image/svg+xml" href="favicon.svg"/>
 
@@ -13,14 +13,14 @@
   <meta property="og:type" content="website"/>
   <meta property="og:url" content="https://wijsmakers.nl/"/>
   <meta property="og:title" content="Wijsmakers — Theater &amp; Muziek op Maat"/>
-  <meta property="og:description" content="Theatrale voorstellingen op maat voor bruiloften, feesten en jubilea. Persoonlijk, muzikaal en onvergetelijk."/>
+  <meta property="og:description" content="Theatrale voorstellingen op maat voor bruiloften, feesten, jubilea en bedrijfsevenementen. Persoonlijk, muzikaal en onvergetelijk."/>
   <meta property="og:image" content="https://wijsmakers.nl/img/wijsmakers-1.jpg"/>
   <meta property="og:locale" content="nl_NL"/>
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image"/>
   <meta name="twitter:title" content="Wijsmakers — Theater &amp; Muziek op Maat"/>
-  <meta name="twitter:description" content="Theatrale voorstellingen op maat voor bruiloften, feesten en jubilea."/>
+  <meta name="twitter:description" content="Theatrale voorstellingen op maat voor bruiloften, feesten, jubilea en bedrijfsevenementen."/>
   <meta name="twitter:image" content="https://wijsmakers.nl/img/wijsmakers-1.jpg"/>
 
   <!-- JSON-LD -->
@@ -30,7 +30,7 @@
     "@type": "PerformingGroup",
     "name": "Wijsmakers",
     "url": "https://wijsmakers.nl",
-    "description": "Wijsmakers maakt theatrale voorstellingen op maat voor bruiloften, feesten en jubilea in heel Nederland. Drie makers combineren theater, muziek en humor tot een onvergetelijke ervaring.",
+    "description": "Wijsmakers maakt theatrale voorstellingen op maat voor bruiloften, feesten, jubilea en bedrijfsevenementen in heel Nederland. Drie makers combineren theater, muziek en humor tot een onvergetelijke ervaring.",
     "address": {
       "@type": "PostalAddress",
       "addressCountry": "NL"
@@ -43,7 +43,7 @@
       { "@type": "Person", "name": "Mila Werner" },
       { "@type": "Person", "name": "Bram Wikkerink" }
     ],
-    "knowsAbout": ["Theater", "Muziek", "Bruiloften", "Evenementen"],
+    "knowsAbout": ["Theater", "Muziek", "Bruiloften", "Bedrijfsevenementen", "Evenementen"],
     "areaServed": {
       "@type": "Country",
       "name": "Nederland"
@@ -51,27 +51,49 @@
   }
   </script>
 
+  <!-- Filena (brand font, self-hosted) -->
+  <style>
+    @font-face {
+      font-family: 'Filena';
+      src: url('fonts/Filena-Thin.ttf') format('truetype');
+      font-weight: 100;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: 'Filena';
+      src: url('fonts/Filena-SemiBold.ttf') format('truetype');
+      font-weight: 600;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: 'Filena';
+      src: url('fonts/Filena-Bold.ttf') format('truetype');
+      font-weight: 700;
+      font-style: normal;
+      font-display: swap;
+    }
+  </style>
+
   <link rel="preconnect" href="https://fonts.googleapis.com"/>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-  <link href="https://fonts.googleapis.com/css2?family=Sacramento&family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Nunito:wght@400;500;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet"/>
-  <!-- force Montserrat preload -->
-  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&display=swap" as="style"/>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet"/>
 
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
     :root {
       --cream:     #FAFAFE;
-      --warm:      #F2EFF8;
-      --lavender:  #B8A9D9;
-      --lavender-l:#D1C6E8;
-      --navy:      #2D2755;
-      --text:      #3A3560;
-      --text-body: #4D4872;
-      --muted:     #7A7598;
-      --accent:    #6E5FAD;
-      --font-logo: 'Sacramento', cursive;
-      --font-wm:   'Montserrat', sans-serif;
+      --warm:      #F5F0FA;
+      --lavender:  #CDA3E6;
+      --lavender-l:#DFC0F0;
+      --navy:      #334594;
+      --text:      #2D3D78;
+      --text-body: #4D5A8A;
+      --muted:     #7A85A8;
+      --accent:    #334594;
+      --font-wm:   'Filena', sans-serif;
       --font-n:    'Nunito', sans-serif;
       --font-s:    'Inter', -apple-system, sans-serif;
     }
@@ -102,15 +124,25 @@
       background: rgba(250,250,254,0.92);
       backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px);
       padding: 14px 40px;
-      box-shadow: 0 1px 0 rgba(45,39,85,0.08);
+      box-shadow: 0 1px 0 rgba(51,69,148,0.08);
     }
     .nav-logo {
-      font-family: var(--font-wm); font-size: 16px; font-weight: 600;
-      color: #fff; text-decoration: none;
-      letter-spacing: 0.18em; text-transform: uppercase;
+      display: flex; align-items: center; gap: 10px;
+      text-decoration: none; transition: opacity 0.3s;
+    }
+    .nav-logo:hover { opacity: 0.8; }
+    .nav-logo svg.wm-icon {
+      height: 32px; width: auto;
+    }
+    .nav-logo svg.wm-icon .wm-path { fill: #fff; transition: fill 0.4s; }
+    nav.scrolled .nav-logo svg.wm-icon .wm-path { fill: var(--navy); }
+    .nav-logo-text {
+      font-family: var(--font-wm); font-size: 16px; font-weight: 100;
+      color: #fff; letter-spacing: 0.18em; text-transform: uppercase;
       transition: color 0.4s;
     }
-    nav.scrolled .nav-logo { color: var(--navy); }
+    nav.scrolled .nav-logo-text { color: var(--navy); }
+
     .nav-links { display: flex; gap: 32px; list-style: none; }
     .nav-links a {
       font-family: var(--font-n);
@@ -143,24 +175,28 @@
       position: absolute; inset: 0;
       background: linear-gradient(
         to bottom,
-        rgba(45,39,85,0.30) 0%,
-        rgba(45,39,85,0.50) 50%,
-        rgba(45,39,85,0.85) 100%
+        rgba(51,69,148,0.25) 0%,
+        rgba(51,69,148,0.45) 50%,
+        rgba(51,69,148,0.82) 100%
       );
     }
     .hero-content {
       position: relative; z-index: 2; text-align: center;
       padding: 0 24px; max-width: 720px; width: 100%;
     }
+    .hero-logo {
+      display: block; margin: 0 auto 24px; height: 80px; width: auto;
+    }
+    .hero-logo .wm-path { fill: #fff; }
     .hero-content h1 {
-      font-family: var(--font-wm); font-weight: 500;
+      font-family: var(--font-wm); font-weight: 100;
       font-size: clamp(36px, 6vw, 64px);
       color: #fff; line-height: 1;
       letter-spacing: 0.22em; text-transform: uppercase;
       margin-bottom: 16px;
     }
     .hero-tagline {
-      font-family: var(--font-wm); font-weight: 500;
+      font-family: var(--font-wm); font-weight: 100;
       font-size: clamp(13px, 1.6vw, 16px);
       letter-spacing: 0.22em; text-transform: uppercase;
       color: var(--lavender-l);
@@ -204,9 +240,9 @@
     .container { max-width: 1080px; margin: 0 auto; }
 
     .section-label {
-      font-family: var(--font-wm); font-size: 11px; font-weight: 500;
+      font-family: var(--font-wm); font-size: 12px; font-weight: 100;
       letter-spacing: 0.2em; text-transform: uppercase;
-      color: var(--accent); margin-bottom: 16px;
+      color: var(--lavender); margin-bottom: 16px;
     }
     .section-title {
       font-family: var(--font-n); font-weight: 600;
@@ -236,25 +272,25 @@
     .intro-img:hover img { transform: scale(1.03); }
     .intro-img::after {
       content: ''; position: absolute; inset: 0;
-      border: 1px solid rgba(45,39,85,0.06); border-radius: 6px;
+      border: 1px solid rgba(51,69,148,0.06); border-radius: 6px;
       pointer-events: none;
     }
 
     /* ── DIENSTEN ── */
     .diensten { background: var(--warm); }
     .diensten-grid {
-      display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px;
+      display: grid; grid-template-columns: repeat(2, 1fr); gap: 32px;
       margin-top: 48px;
     }
     .dienst-card {
       background: var(--cream); border-radius: 6px;
       padding: 40px 32px;
-      border: 1px solid rgba(45,39,85,0.05);
+      border: 1px solid rgba(51,69,148,0.05);
       transition: transform 0.3s, box-shadow 0.3s;
     }
     .dienst-card:hover {
       transform: translateY(-4px);
-      box-shadow: 0 12px 40px rgba(45,39,85,0.08);
+      box-shadow: 0 12px 40px rgba(51,69,148,0.08);
     }
     .dienst-icon {
       width: 48px; height: 48px; border-radius: 50%;
@@ -276,10 +312,11 @@
       text-align: center; position: relative; overflow: hidden;
     }
     .testimonial::before {
-      content: '\201C'; position: absolute; top: 20px; left: 50%;
+      content: ''; position: absolute; top: 30px; left: 50%;
       transform: translateX(-50%);
-      font-family: var(--font-logo); font-size: 240px;
-      color: rgba(255,255,255,0.15); line-height: 1;
+      width: 120px; height: 120px;
+      background: url('img/logo-wm.svg') center / contain no-repeat;
+      opacity: 0.12;
       pointer-events: none;
     }
     .testimonial blockquote {
@@ -317,7 +354,7 @@
     /* Lightbox */
     .lightbox {
       position: fixed; inset: 0; z-index: 1000;
-      background: rgba(45,39,85,0.92);
+      background: rgba(51,69,148,0.92);
       backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px);
       display: flex; align-items: center; justify-content: center;
       opacity: 0; pointer-events: none;
@@ -363,7 +400,7 @@
       display: inline-flex; align-items: center; gap: 12px;
       font-family: var(--font-s); font-size: 15px; font-weight: 400;
       color: var(--accent); text-decoration: none;
-      padding: 14px 0; border-bottom: 1px solid rgba(110,95,173,0.2);
+      padding: 14px 0; border-bottom: 1px solid rgba(51,69,148,0.15);
       width: 100%; transition: border-color 0.3s, color 0.3s;
       margin-bottom: 8px;
     }
@@ -406,7 +443,7 @@
       .nav-links.open {
         display: flex; flex-direction: column;
         position: fixed; top: 0; left: 0; right: 0; bottom: 0;
-        background: rgba(45,39,85,0.97);
+        background: rgba(51,69,148,0.97);
         backdrop-filter: blur(12px);
         justify-content: center; align-items: center; gap: 28px;
         z-index: 99;
@@ -433,6 +470,7 @@
     @media (max-width: 520px) {
       .galerij-grid { grid-template-columns: 1fr; grid-auto-rows: 220px; }
       .galerij-item.wide { grid-column: span 1; }
+      .hero-logo { height: 56px; }
       .hero-content h1 { font-size: clamp(28px, 8vw, 42px); letter-spacing: 0.14em; }
       .hero-tagline { font-size: 11px; letter-spacing: 0.14em; }
       .section-title { font-size: clamp(26px, 6vw, 36px); }
@@ -444,7 +482,15 @@
 
   <!-- NAV -->
   <nav id="nav" aria-label="Hoofdnavigatie">
-    <a href="#" class="nav-logo">Wijsmakers</a>
+    <a href="#" class="nav-logo">
+      <svg class="wm-icon" viewBox="0 0 320 300" aria-hidden="true">
+        <g class="wm-path" transform="translate(0, 0)">
+          <path d="M 28.859375 64.949 C 31.117188 64.949 32.332031 65.993 32.5 68.075 C 32.675781 70.149 32.765625 72.399 32.765625 74.825 C 32.765625 80.723 32.9375 88.134 33.28125 97.059 C 33.632812 105.989 34.203125 115.352 34.984375 125.153 C 35.765625 134.946 36.800781 144.181 38.09375 152.856 C 39.394531 161.524 40.910156 168.587 42.640625 174.044 C 44.378906 179.505 46.375 182.231 48.625 182.231 C 50.019531 182.231 51.582031 181.02 53.3125 178.591 C 55.039062 176.165 56.898438 173.177 58.890625 169.622 C 60.890625 166.071 63.101562 162.56 65.53125 159.091 C 67.957031 155.622 70.6875 152.677 73.71875 150.247 C 76.757812 147.821 80.097656 146.607 83.734375 146.607 C 85.640625 146.607 87.847656 147.993 90.359375 150.763 C 92.878906 153.536 95.613281 157.177 98.5625 161.685 C 101.507812 166.196 104.457031 170.966 107.40625 175.997 C 110.351562 181.02 113.128906 185.872 115.734375 190.56 C 119.890625 176.341 122.703125 161.993 124.171875 147.513 C 125.648438 133.036 126.78125 118.473 127.5625 103.825 C 128.34375 89.169 129.6875 74.649 131.59375 60.263 C 133.15625 57.661 135.84375 55.536 139.65625 53.888 C 143.46875 52.243 146.847656 51.419 149.796875 51.419 C 151.703125 51.419 153.257812 52.29 154.46875 54.028 C 155.6875 55.759 156.296875 58.27 156.296875 61.56 C 156.640625 67.801 156.984375 74.044 157.328125 80.294 C 157.679688 86.536 157.859375 92.685 157.859375 98.747 C 157.859375 108.458 157.46875 118.341 156.6875 128.403 C 155.90625 138.458 154.429688 148.036 152.265625 157.138 C 150.097656 166.243 147.109375 174.395 143.296875 181.591 C 139.484375 188.778 134.539062 194.458 128.46875 198.622 C 122.40625 202.778 114.953125 204.856 106.109375 204.856 C 101.253906 204.856 97.09375 202.993 93.625 199.263 C 90.15625 195.536 87.078125 190.942 84.390625 185.481 C 81.703125 180.024 78.972656 174.696 76.203125 169.497 C 71.171875 177.466 65.617188 183.927 59.546875 188.872 C 53.484375 193.81 45.6875 196.278 36.15625 196.278 C 31.289062 196.278 27.296875 194.505 24.171875 190.95 C 21.054688 187.388 18.546875 182.794 16.640625 177.169 C 14.734375 171.536 13.300781 165.466 12.34375 158.966 C 11.394531 152.458 10.742188 146.13 10.390625 139.981 C 10.046875 133.825 9.875 128.575 9.875 124.231 C 9.875 118.868 9.914062 112.806 10 106.044 C 10.09375 99.274 10.613281 92.77 11.5625 86.528 C 12.519531 80.29 14.34375 75.134 17.03125 71.06 C 19.71875 66.989 23.660156 64.949 28.859375 64.949 Z"/>
+          <path transform="translate(124.435, 73.181)" d="M 40.46875 95.653 C 39.507812 95.009 38.628906 95.852 37.828125 98.185 C 37.023438 100.509 36.34375 103.723 35.78125 107.825 C 35.21875 111.919 34.734375 116.294 34.328125 120.95 C 33.929688 125.606 33.609375 130.102 33.359375 134.435 C 33.117188 138.77 33 142.306 33 145.044 C 33 155.005 33.320312 164.962 33.96875 174.919 C 34.613281 184.88 34.9375 194.833 34.9375 204.778 C 34.9375 211.528 34.253906 216.267 32.890625 219.003 C 31.523438 221.723 29.515625 223.411 26.859375 224.06 C 24.210938 224.704 20.878906 225.267 16.859375 225.747 C 14.296875 217.716 12.488281 208.966 11.4375 199.497 C 10.394531 190.02 9.753906 180.462 9.515625 170.825 C 9.273438 161.181 9.15625 152.102 9.15625 143.591 C 9.15625 133.958 9.316406 124.442 9.640625 115.044 C 9.960938 105.649 11.125 97.099 13.125 89.388 C 15.132812 81.681 18.546875 75.497 23.359375 70.841 C 28.179688 66.177 35.171875 63.841 44.328125 63.841 C 48.179688 63.841 51.710938 65.333 54.921875 68.31 C 58.140625 71.278 61.070312 75.056 63.71875 79.638 C 66.375 84.212 68.90625 89.028 71.3125 94.091 C 73.71875 99.145 75.96875 103.759 78.0625 107.935 C 82.394531 101.509 86.003906 95.524 88.890625 89.981 C 91.785156 84.442 94.675781 79.622 97.5625 75.528 C 100.457031 71.435 104.03125 68.227 108.28125 65.903 C 112.539062 63.571 118.207031 62.403 125.28125 62.403 C 128.332031 62.403 131.0625 64.45 133.46875 68.544 C 135.875 72.638 137.960938 78.138 139.734375 85.044 C 141.503906 91.95 142.988281 99.622 144.1875 108.06 C 145.394531 116.489 146.398438 125.083 147.203125 133.841 C 148.003906 142.591 148.601562 150.864 149 158.653 C 149.40625 166.446 149.6875 173.192 149.84375 178.888 C 150.007812 184.587 150.09375 188.56 150.09375 190.81 C 150.09375 195.79 150.007812 200.81 149.84375 205.872 C 149.6875 210.935 149.128906 216.192 148.171875 221.653 C 143.828125 223.735 139.726562 225.38 135.875 226.591 C 132.019531 227.798 128.085938 228.403 124.078125 228.403 C 121.671875 228.403 120.144531 227.357 119.5 225.263 C 118.851562 223.177 118.367188 221.329 118.046875 219.716 C 117.722656 216.028 117.28125 210.536 116.71875 203.231 C 116.164062 195.919 115.566406 187.649 114.921875 178.419 C 114.273438 169.181 113.585938 159.821 112.859375 150.341 C 112.140625 140.864 111.5 132.106 110.9375 124.075 C 110.375 116.044 109.890625 109.622 109.484375 104.81 C 109.085938 99.989 108.8125 97.653 108.65625 97.81 C 106.082031 103.278 104.03125 107.661 102.5 110.95 C 100.976562 114.243 99.578125 117.415 98.296875 120.466 C 96.691406 124.321 94.039062 127.415 90.34375 129.747 C 86.644531 132.071 82.546875 133.794 78.046875 134.919 C 73.554688 136.044 69.304688 136.607 65.296875 136.607 C 62.398438 136.607 60.109375 134.919 58.421875 131.544 C 56.734375 128.169 55.125 124.075 53.59375 119.263 C 52.070312 114.442 50.347656 109.821 48.421875 105.403 C 46.492188 100.989 43.84375 97.739 40.46875 95.653 Z"/>
+        </g>
+      </svg>
+      <span class="nav-logo-text">Wijsmakers</span>
+    </a>
     <ul class="nav-links" id="navLinks">
       <li><a href="#over">Over ons</a></li>
       <li><a href="#diensten">Wat we doen</a></li>
@@ -461,9 +507,15 @@
     <div class="hero-bg" role="img" aria-label="Wijsmakers trio speelt theater met piano tijdens een bruiloft"></div>
     <div class="hero-overlay"></div>
     <div class="hero-content">
+      <svg class="hero-logo" viewBox="0 0 320 300" aria-hidden="true">
+        <g class="wm-path" fill="#fff">
+          <path d="M 28.859375 64.949 C 31.117188 64.949 32.332031 65.993 32.5 68.075 C 32.675781 70.149 32.765625 72.399 32.765625 74.825 C 32.765625 80.723 32.9375 88.134 33.28125 97.059 C 33.632812 105.989 34.203125 115.352 34.984375 125.153 C 35.765625 134.946 36.800781 144.181 38.09375 152.856 C 39.394531 161.524 40.910156 168.587 42.640625 174.044 C 44.378906 179.505 46.375 182.231 48.625 182.231 C 50.019531 182.231 51.582031 181.02 53.3125 178.591 C 55.039062 176.165 56.898438 173.177 58.890625 169.622 C 60.890625 166.071 63.101562 162.56 65.53125 159.091 C 67.957031 155.622 70.6875 152.677 73.71875 150.247 C 76.757812 147.821 80.097656 146.607 83.734375 146.607 C 85.640625 146.607 87.847656 147.993 90.359375 150.763 C 92.878906 153.536 95.613281 157.177 98.5625 161.685 C 101.507812 166.196 104.457031 170.966 107.40625 175.997 C 110.351562 181.02 113.128906 185.872 115.734375 190.56 C 119.890625 176.341 122.703125 161.993 124.171875 147.513 C 125.648438 133.036 126.78125 118.473 127.5625 103.825 C 128.34375 89.169 129.6875 74.649 131.59375 60.263 C 133.15625 57.661 135.84375 55.536 139.65625 53.888 C 143.46875 52.243 146.847656 51.419 149.796875 51.419 C 151.703125 51.419 153.257812 52.29 154.46875 54.028 C 155.6875 55.759 156.296875 58.27 156.296875 61.56 C 156.640625 67.801 156.984375 74.044 157.328125 80.294 C 157.679688 86.536 157.859375 92.685 157.859375 98.747 C 157.859375 108.458 157.46875 118.341 156.6875 128.403 C 155.90625 138.458 154.429688 148.036 152.265625 157.138 C 150.097656 166.243 147.109375 174.395 143.296875 181.591 C 139.484375 188.778 134.539062 194.458 128.46875 198.622 C 122.40625 202.778 114.953125 204.856 106.109375 204.856 C 101.253906 204.856 97.09375 202.993 93.625 199.263 C 90.15625 195.536 87.078125 190.942 84.390625 185.481 C 81.703125 180.024 78.972656 174.696 76.203125 169.497 C 71.171875 177.466 65.617188 183.927 59.546875 188.872 C 53.484375 193.81 45.6875 196.278 36.15625 196.278 C 31.289062 196.278 27.296875 194.505 24.171875 190.95 C 21.054688 187.388 18.546875 182.794 16.640625 177.169 C 14.734375 171.536 13.300781 165.466 12.34375 158.966 C 11.394531 152.458 10.742188 146.13 10.390625 139.981 C 10.046875 133.825 9.875 128.575 9.875 124.231 C 9.875 118.868 9.914062 112.806 10 106.044 C 10.09375 99.274 10.613281 92.77 11.5625 86.528 C 12.519531 80.29 14.34375 75.134 17.03125 71.06 C 19.71875 66.989 23.660156 64.949 28.859375 64.949 Z"/>
+          <path transform="translate(124.435, 73.181)" d="M 40.46875 95.653 C 39.507812 95.009 38.628906 95.852 37.828125 98.185 C 37.023438 100.509 36.34375 103.723 35.78125 107.825 C 35.21875 111.919 34.734375 116.294 34.328125 120.95 C 33.929688 125.606 33.609375 130.102 33.359375 134.435 C 33.117188 138.77 33 142.306 33 145.044 C 33 155.005 33.320312 164.962 33.96875 174.919 C 34.613281 184.88 34.9375 194.833 34.9375 204.778 C 34.9375 211.528 34.253906 216.267 32.890625 219.003 C 31.523438 221.723 29.515625 223.411 26.859375 224.06 C 24.210938 224.704 20.878906 225.267 16.859375 225.747 C 14.296875 217.716 12.488281 208.966 11.4375 199.497 C 10.394531 190.02 9.753906 180.462 9.515625 170.825 C 9.273438 161.181 9.15625 152.102 9.15625 143.591 C 9.15625 133.958 9.316406 124.442 9.640625 115.044 C 9.960938 105.649 11.125 97.099 13.125 89.388 C 15.132812 81.681 18.546875 75.497 23.359375 70.841 C 28.179688 66.177 35.171875 63.841 44.328125 63.841 C 48.179688 63.841 51.710938 65.333 54.921875 68.31 C 58.140625 71.278 61.070312 75.056 63.71875 79.638 C 66.375 84.212 68.90625 89.028 71.3125 94.091 C 73.71875 99.145 75.96875 103.759 78.0625 107.935 C 82.394531 101.509 86.003906 95.524 88.890625 89.981 C 91.785156 84.442 94.675781 79.622 97.5625 75.528 C 100.457031 71.435 104.03125 68.227 108.28125 65.903 C 112.539062 63.571 118.207031 62.403 125.28125 62.403 C 128.332031 62.403 131.0625 64.45 133.46875 68.544 C 135.875 72.638 137.960938 78.138 139.734375 85.044 C 141.503906 91.95 142.988281 99.622 144.1875 108.06 C 145.394531 116.489 146.398438 125.083 147.203125 133.841 C 148.003906 142.591 148.601562 150.864 149 158.653 C 149.40625 166.446 149.6875 173.192 149.84375 178.888 C 150.007812 184.587 150.09375 188.56 150.09375 190.81 C 150.09375 195.79 150.007812 200.81 149.84375 205.872 C 149.6875 210.935 149.128906 216.192 148.171875 221.653 C 143.828125 223.735 139.726562 225.38 135.875 226.591 C 132.019531 227.798 128.085938 228.403 124.078125 228.403 C 121.671875 228.403 120.144531 227.357 119.5 225.263 C 118.851562 223.177 118.367188 221.329 118.046875 219.716 C 117.722656 216.028 117.28125 210.536 116.71875 203.231 C 116.164062 195.919 115.566406 187.649 114.921875 178.419 C 114.273438 169.181 113.585938 159.821 112.859375 150.341 C 112.140625 140.864 111.5 132.106 110.9375 124.075 C 110.375 116.044 109.890625 109.622 109.484375 104.81 C 109.085938 99.989 108.8125 97.653 108.65625 97.81 C 106.082031 103.278 104.03125 107.661 102.5 110.95 C 100.976562 114.243 99.578125 117.415 98.296875 120.466 C 96.691406 124.321 94.039062 127.415 90.34375 129.747 C 86.644531 132.071 82.546875 133.794 78.046875 134.919 C 73.554688 136.044 69.304688 136.607 65.296875 136.607 C 62.398438 136.607 60.109375 134.919 58.421875 131.544 C 56.734375 128.169 55.125 124.075 53.59375 119.263 C 52.070312 114.442 50.347656 109.821 48.421875 105.403 C 46.492188 100.989 43.84375 97.739 40.46875 95.653 Z"/>
+        </g>
+      </svg>
       <h1>Wijsmakers</h1>
       <p class="hero-tagline">Theater &amp; Muziek op Maat</p>
-      <p>Theatrale voorstellingen vol muziek en humor — speciaal gemaakt voor jullie bruiloft, feest of jubileum.</p>
+      <p>Theatrale voorstellingen vol muziek en humor — speciaal gemaakt voor jullie bruiloft, feest of evenement.</p>
       <a href="#contact" class="hero-cta">Boek een kennismaking</a>
     </div>
     <div class="hero-scroll"><span></span></div>
@@ -488,28 +540,35 @@
   <section class="diensten" id="diensten">
     <div class="container">
       <p class="section-label fade-in">Wat we doen</p>
-      <h2 class="section-title fade-in">Voorstellingen op maat<br/>voor elk feest</h2>
+      <h2 class="section-title fade-in">Voorstellingen op maat<br/>voor elk moment</h2>
       <div class="diensten-grid">
         <div class="dienst-card fade-in">
           <div class="dienst-icon">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#6E5FAD" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78L12 21.23l8.84-8.84a5.5 5.5 0 0 0 0-7.78z"/></svg>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#334594" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78L12 21.23l8.84-8.84a5.5 5.5 0 0 0 0-7.78z"/></svg>
           </div>
           <h3>Theater bij je bruiloft</h3>
           <p>Jullie liefdesverhaal verdient meer dan een standaard ceremonie. We interviewen het bruidspaar, familie en vrienden — en maken er een persoonlijke voorstelling van die lacht, ontroert en verrast.</p>
         </div>
         <div class="dienst-card fade-in">
           <div class="dienst-icon">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#6E5FAD" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14l-5-4.87 6.91-1.01L12 2z"/></svg>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#334594" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14l-5-4.87 6.91-1.01L12 2z"/></svg>
           </div>
           <h3>Voorstelling bij je feest</h3>
           <p>Een verjaardag, pensioen of ander feest verdient meer dan een toespraak. Wij maken er een theatrale show van met de beste verhalen van de hoofdpersoon — met muziek en humor.</p>
         </div>
         <div class="dienst-card fade-in">
           <div class="dienst-icon">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#6E5FAD" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#334594" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg>
           </div>
           <h3>Show bij je jubileum</h3>
           <p>Of het nu een huwelijksjubileum is of een zakelijk lustrum — wij vangen de essentie van de gelegenheid en maken er een voorstelling van die beklijft.</p>
+        </div>
+        <div class="dienst-card fade-in">
+          <div class="dienst-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#334594" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 7V5a4 4 0 0 0-8 0v2"/><line x1="12" y1="12" x2="12" y2="16"/></svg>
+          </div>
+          <h3>Bedrijfsevenement</h3>
+          <p>Van awardshow tot teamuitje — wij brengen theater en muziek naar jullie zakelijke evenement. Op maat gemaakt, professioneel en altijd met een knipoog.</p>
         </div>
       </div>
     </div>
@@ -573,7 +632,7 @@
       <div class="fade-in">
         <p class="section-label">Contact</p>
         <h2 class="section-title">Vertel ons over<br/>jullie feest</h2>
-        <p>Benieuwd wat Wijsmakers voor jullie bruiloft, feest of jubileum kan betekenen? Neem vrijblijvend contact op — we denken graag mee over de mogelijkheden.</p>
+        <p>Benieuwd wat Wijsmakers voor jullie bruiloft, feest of evenement kan betekenen? Neem vrijblijvend contact op — we denken graag mee over de mogelijkheden.</p>
         <a href="mailto:wijsmakers@gmail.com" class="contact-link">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
           wijsmakers@gmail.com
